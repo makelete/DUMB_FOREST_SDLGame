@@ -73,9 +73,9 @@ Game:
 Cách cài đặt game:
 
         
-        - B1: Clone repository này về máy.
+   - B1: Clone repository này về máy.
 
-        - B2: Chạy các dòng lệnh sau trong terminal:
+   - B2: Chạy các dòng lệnh sau trong terminal:
             
             mingw32-make
             DUMB_FOREST.exe
