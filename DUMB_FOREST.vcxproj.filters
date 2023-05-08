@@ -191,6 +191,6 @@
     <None Include="README.md">
       <Filter>Source Files</Filter>
     </None>
-    <None Include="makefile" />
+    <None Include="Makefile" />
   </ItemGroup>
 </Project>

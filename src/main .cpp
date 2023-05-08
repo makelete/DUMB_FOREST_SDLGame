@@ -58,14 +58,15 @@ bool init() {
 	{
 		success = false;
 	}
-	background_music = Mix_LoadMUS("sounds/mainbackground.wav");
-	menu_music = Mix_LoadMUS("sounds/menu.wav");
+	background_music = Mix_LoadMUS("sounds/mainbackground_mp3.mp3");
+	menu_music = Mix_LoadMUS("sounds/menu_mp3.mp3");
 	gameover_music = Mix_LoadMUS("sounds/gameover.wav");
 	winner_music = Mix_LoadMUS("sounds/win.wav");
 
 	sound[0] = Mix_LoadWAV("sounds/jump.wav");
     sound[1] = Mix_LoadWAV("sounds/fish.wav");
-	if (background_music==NULL||sound[0] == NULL|| sound[0] == NULL || menu_music == NULL || gameover_music == NULL||winner_music == NULL ) {
+
+	if (background_music==NULL||sound[0] == NULL|| sound[1] == NULL || menu_music == NULL || gameover_music == NULL || winner_music == NULL) {
 		cerr << "Sound Error!\n" << Mix_GetError();
 		success = false;
 	}
@@ -170,10 +171,10 @@ int main(int arcs, char* argv[]) {
 	score_text_2.SetColor(Text::WHITE);
 	int score_value_2 = 0;
 
-	score_text_1.SetText("Score KIT: 0");
+	score_text_1.SetText("Score Moc: 0");
     score_text_1.LoadFont(mainfont, gscreen);
 
-    score_text_2.SetText("Score KAT: 0");
+    score_text_2.SetText("Score Meo: 0");
     score_text_2.LoadFont(mainfont, gscreen);
     
 			
@@ -400,7 +401,7 @@ int main(int arcs, char* argv[]) {
 			score_value_1 = player1.getScore1();
 
 			std::string val_str_score1 = std::to_string(score_value_1);
-   			std::string strScore1("Score KIT: ");
+   			std::string strScore1("Score Moc: ");
     		strScore1 += val_str_score1;
 
     		score_text_1.SetText(strScore1);
@@ -413,7 +414,7 @@ int main(int arcs, char* argv[]) {
     		score_value_2 = player2.getScore2();
 
 			std::string val_str_score2 = std::to_string(score_value_2);
-    		std::string strScore2("Score KAT: ");
+    		std::string strScore2("Score Meo: ");
     		strScore2 += val_str_score2;
 
     		score_text_2.SetText(strScore2);
