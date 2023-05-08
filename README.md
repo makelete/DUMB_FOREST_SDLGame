@@ -79,7 +79,7 @@ Cách cài đặt game:
 
    - B2: Chạy các dòng lệnh sau trong terminal:
             
-            mingw32-make all
+            mingw32-make DUMB_FOREST.exe
 
 ===========================================================================
 
