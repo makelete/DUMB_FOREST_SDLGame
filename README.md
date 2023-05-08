@@ -7,7 +7,7 @@ Giới thiệu:
 
     - Mã sinh viên: 22021201
 
-    - Khóa học: QH2022I/CB
+    - Khóa học: QH-2022-I/CQ-C-B
 
     - Lớp học phần: INT2215 1
 
