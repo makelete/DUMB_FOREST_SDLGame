@@ -80,6 +80,8 @@ Cách cài đặt game:
    - B2: Chạy các dòng lệnh sau trong terminal:
             
             mingw32-make all
+      
+   - B3: Vào folder vừa clone repo trong máy và bật file DUMB_FOREST.exe, khi đó trò chơi sẽ được chạy.
 
 ===========================================================================
 
